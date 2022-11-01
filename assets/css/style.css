@@ -13,21 +13,48 @@ header {
     color: #f1f5f8;
     display: flex;
     justify-content: space-between ;
-    padding: 20px
+    align-items: center;
+    padding: 10px;
+    margin-top: 5px;
+    border-top: 6px solid #f1f5f8;
 }
 
-/* header img {
-    float: left;
-} */
+#logo {
+    width: 50px;
+    height: auto;
+    border: 2px solid #f1f5f8;
+}
 
-h1 {
-    float: left;
+#logo:hover {
+    border-radius: 50%;
+}
+
+#brand ul {
+    font-size: 20px; 
+    font-style: italic; 
+    font-variant: normal; 
+    font-weight: 100; 
+    line-height: 22px; 
+    float: right;
+    margin-left: 10px;
+    padding-top: 4px;
+    padding-bottom: 8px;
+}
+
+#logo-name {
+    font-family: Futura; 
+    font-size: 20px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 100; 
+    line-height: 22px; 
+    text-decoration: underline;
 }
 
 nav {
-
     float: right;
     list-style: none;
+    margin-right: 20px;
 }
 
 nav li {
