@@ -11,4 +11,32 @@ body {
 header {
     background-color: #202124;
     color: #f1f5f8;
+    display: flex;
+    justify-content: space-between ;
+    padding: 20px
+}
+
+/* header img {
+    float: left;
+} */
+
+h1 {
+    float: left;
+}
+
+nav {
+
+    float: right;
+    list-style: none;
+}
+
+nav li {
+    list-style-type:none;
+    display: inline-block;
+    margin-left: 25px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
 }
