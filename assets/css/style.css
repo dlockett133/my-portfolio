@@ -19,10 +19,15 @@ header {
     border-top: 6px solid #f1f5f8;
 }
 
+/* #brand {
+    border-bottom: 3px;
+} */
+
 #logo {
     width: 50px;
     height: auto;
     border: 2px solid #f1f5f8;
+    margin-top: 3px;
 }
 
 #logo:hover {
@@ -37,8 +42,8 @@ header {
     line-height: 22px; 
     float: right;
     margin-left: 10px;
-    padding-top: 4px;
-    padding-bottom: 8px;
+    padding-top: 5px;
+    /* padding-bottom: 8px; */
 }
 
 #logo-name {
