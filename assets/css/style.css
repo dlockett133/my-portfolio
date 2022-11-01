@@ -72,3 +72,18 @@ nav a {
     color: #ffffff;
     text-decoration: none;
 }
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 10%; */
+    margin: 25px 440px 25px 440px;
+    padding-top: 50px;
+}
+
+#headshot {
+    width: 300px;
+    border: 2px solid #202124;
+    border-radius: 50%;
+}
