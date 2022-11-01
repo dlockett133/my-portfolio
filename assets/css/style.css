@@ -30,7 +30,7 @@ header {
 }
 
 #brand ul {
-    font-size: 20px; 
+    font-size: 15px; 
     font-style: italic; 
     font-variant: normal; 
     font-weight: 100; 
@@ -48,7 +48,7 @@ header {
     font-variant: normal; 
     font-weight: 100; 
     line-height: 22px; 
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
 nav {
