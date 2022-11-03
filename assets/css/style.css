@@ -155,7 +155,7 @@ main p {
     float: right;
 }
 
-summary div {
+#contact-me {
     display: flex;
     width: 300px;
     position: absolute;
