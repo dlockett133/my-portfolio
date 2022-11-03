@@ -168,38 +168,42 @@ main p {
     margin-left: 3px;
 }
 
-#project-1 img:hover, #project-2:hover {
+#project-1 img:hover, #project-2 img:hover {
 opacity: .5;
 animation: bounce-up 1s;
 }
 
-#project-3:hover, #project-4:hover {
+#project-3 img:hover, #project-4 img:hover {
     opacity: .5;
     animation: bounce-down 1s;
 }
 
-#project-1 {
+/* #project-1 {
+    position: relative;
+} */
+
+#grid a {
     position: relative;
 }
 
-#project-1 .projects {
+#project-1 img {
     border-radius: 25% 0% 0% 0%;
 }
 
-#project-2 .projects{
+#project-2 img{
     border-radius: 0% 25% 0% 0%;
 
 }
 
-#project-3 .projects{
+#project-3 img{
     border-radius: 0% 0% 0% 25%;
 }
 
-#project-4 .projects{
+#project-4 img{
     border-radius: 0% 0% 25% 0%;
 }
 
-#project-1 div, #project-3 div{
+#project-1 div{
     position: absolute;
     bottom: 0;
     right: 0;
@@ -212,12 +216,22 @@ animation: bounce-up 1s;
     transition: visibility 0s, opacity 0.5s linear;
    }
    
-   /* Hover on Parent Container */
-   /* .content_img:hover{
-    cursor: pointer;
-   } */
-   
-   #project-1:hover div{
+   #project-2 div{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: black;
+    color: white;
+    margin-left: 3px;
+    margin-bottom: 5px;
+    font-family: sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0s, opacity 0.5s linear;
+   }
+
+   #project-1:hover div,
+   #project-2:hover div {
     width: 150px;
     padding: 8px 15px;
     visibility: visible;
