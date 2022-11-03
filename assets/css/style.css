@@ -176,9 +176,9 @@ summary div {
     justify-content: center;
 }
 
-.icons img {
+/* .icons img {
     width: 20px;
-}
+} */
 
 #projects {
     display: flex;
