@@ -154,7 +154,7 @@ main p {
     float: right;
 }
 
-#grid {
+#projects {
     display: flex;
     /* justify-content: center; */
     margin-left: 25%;
@@ -162,10 +162,14 @@ main p {
    width: 50%;
 }
 
-#grid img {
+#projects img {
     width:300px ;
     height: 300px;
     margin-left: 3px;
+}
+
+#projects a {
+    position: relative;
 }
 
 #project-1 img:hover, #project-2 img:hover {
@@ -176,14 +180,6 @@ animation: bounce-up 1s;
 #project-3 img:hover, #project-4 img:hover {
     opacity: .5;
     animation: bounce-down 1s;
-}
-
-/* #project-1 {
-    position: relative;
-} */
-
-#grid a {
-    position: relative;
 }
 
 #project-1 img {
@@ -216,7 +212,7 @@ animation: bounce-up 1s;
     transition: visibility 0s, opacity 0.5s linear;
    }
    
-   #project-2 div{
+#project-2 div{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -230,7 +226,7 @@ animation: bounce-up 1s;
     transition: visibility 0s, opacity 0.5s linear;
    }
    
-   #project-3 div{
+#project-3 div{
     position: absolute;
     top: 0;
     right: 0;
@@ -244,7 +240,7 @@ animation: bounce-up 1s;
     transition: visibility 0s, opacity 0.5s linear;
    }
 
-   #project-4 div{
+#project-4 div{
     position: absolute;
     top: 0;
     left: 0;
@@ -258,8 +254,8 @@ animation: bounce-up 1s;
     transition: visibility 0s, opacity 0.5s linear;
    }
 
-   #project-1:hover div,
-   #project-2:hover div {
+#project-1:hover div,
+#project-2:hover div {
     width: 150px;
     padding: 8px 15px;
     visibility: visible;
@@ -267,8 +263,8 @@ animation: bounce-up 1s;
     animation: bounce-up 1s;
    }
    
-   #project-3:hover div,
-   #project-4:hover div {
+#project-3:hover div,
+#project-4:hover div {
     width: 150px;
     padding: 8px 15px;
     visibility: visible;
