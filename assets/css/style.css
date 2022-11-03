@@ -132,6 +132,7 @@ main {
 }
 
 summary {
+    position: relative;
     height: 300px;
     margin-left: 15px;
 }
@@ -148,18 +149,42 @@ main h2 {
 
 main p {
     width: 300px;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
     line-height: 1.5;
     font: 15px My Gill Sans, Lato, sans-serif;
     float: right;
 }
 
+#contact-me {
+    display: flex;
+    width: 300px;
+    position: absolute;
+    bottom: 0;
+    justify-content: flex-start;
+}
+
+.icons {
+    position: relative;
+    display: flex;
+    background-color: #f1f5f8;
+    width: 50px;
+    height: 50px;
+    padding: 8px;
+    border-radius: 50%;
+    margin: 15px 25px 15px 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .icons img {
+    width: 20px;
+} */
+
 #projects {
     display: flex;
-    /* justify-content: center; */
     margin-left: 25%;
-   flex-wrap: wrap;
-   width: 50%;
+    flex-wrap: wrap;
+    width: 50%;
 }
 
 #projects img {
