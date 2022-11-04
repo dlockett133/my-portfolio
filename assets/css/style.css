@@ -42,7 +42,7 @@ body {
     background-color: #f1f5f8;
 }
 
-header {
+header{
     background-color: #202124;
     color: #f1f5f8;
     display: flex;
@@ -294,4 +294,15 @@ animation: bounce-up 1s;
     visibility: visible;
     opacity: 0.7; 
     animation: bounce-down 1s;
+   }
+
+   footer {
+    background-color: #202124;
+    color: #f1f5f8;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    padding: 25px;
+    margin-top: 5px;
+    border-top: 6px solid #f1f5f8;
    }
