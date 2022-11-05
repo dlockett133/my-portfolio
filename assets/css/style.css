@@ -260,6 +260,14 @@ animation: bounce-up 1s;
     #project-4 img{
         border-radius: 0% 0% 25% 25%;
     }
+
+    .projects div {
+
+        width: 150px;
+        padding: 8px 15px;
+        visibility: visible;
+        opacity: .8; 
+    }
     
    }
 
