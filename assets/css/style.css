@@ -170,20 +170,20 @@ main p {
     justify-content: center;
 }
 
-#projects {
+.projects {
     display: flex;
     margin-left: 25%;
     flex-wrap: wrap;
     width: 50%;
 }
 
-#projects img {
+.projects img {
     width:300px ;
     height: 300px;
     margin-left: 3px;
 }
 
-#projects a {
+.projects a {
     position: relative;
 }
 
@@ -214,54 +214,13 @@ animation: bounce-up 1s;
     border-radius: 0% 0% 25% 0%;
 }
 
-#project-1 div{
+.projects div {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 45%;
+    right: 25%;
     background: black;
     color: white;
     margin-bottom: 3px;
-    font-family: sans-serif;
-    opacity: 0;
-    visibility: hidden;
-    transition: visibility 0s, opacity 0.5s linear;
-   }
-   
-#project-2 div{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background: black;
-    color: white;
-    margin-left: 3px;
-    margin-bottom: 3px;
-    font-family: sans-serif;
-    opacity: 0;
-    visibility: hidden;
-    transition: visibility 0s, opacity 0.5s linear;
-   }
-   
-#project-3 div{
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: black;
-    color: white;
-    margin-bottom: 5px;
-    font-family: sans-serif;
-    opacity: 0;
-    visibility: hidden;
-    transition: visibility 0s, opacity 0.5s linear;
-   }
-
-#project-4 div{
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: black;
-    color: white;
-    margin-left: 3px;
-    margin-bottom: 5px;
     font-family: sans-serif;
     opacity: 0;
     visibility: hidden;
@@ -269,21 +228,14 @@ animation: bounce-up 1s;
    }
 
 #project-1:hover div,
-#project-2:hover div {
-    width: 150px;
-    padding: 8px 15px;
-    visibility: visible;
-    opacity: 0.7; 
-    animation: bounce-up 1s;
-   }
-   
+#project-2:hover div,
 #project-3:hover div,
 #project-4:hover div {
     width: 150px;
     padding: 8px 15px;
     visibility: visible;
     opacity: 0.7; 
-    animation: bounce-down 1s;
+    /* animation: bounce-up 1s; */
    }
 
    footer {
@@ -297,7 +249,7 @@ animation: bounce-up 1s;
    }
 
 @media screen and (max-width: 1211px) {
-    #projects img {
+    #project-2 img,  #project-3 img {
         border-radius: 0%;
     }
 
@@ -307,6 +259,14 @@ animation: bounce-up 1s;
 
     #project-4 img{
         border-radius: 0% 0% 25% 25%;
+    }
+
+    .projects div {
+
+        width: 150px;
+        padding: 8px 15px;
+        visibility: visible;
+        opacity: .8; 
     }
     
    }
