@@ -176,7 +176,7 @@ summary {
 }
 /* These selectors (above) affect the 'About Me' class elements and its children elements */
 
-
+/* These selectors (below) affect the 'Projects' class elements and its children elements */
 .projects {
     display: flex;
     margin-left: 25%;
@@ -232,7 +232,7 @@ animation: bounce-up 1s;
     opacity: 0;
     visibility: hidden;
     transition: visibility 0s, opacity 0.5s linear;
-   }
+}
 
 #project-1:hover div,
 #project-2:hover div,
@@ -242,8 +242,8 @@ animation: bounce-up 1s;
     padding: 8px 15px;
     visibility: visible;
     opacity: 0.7; 
-    /* animation: bounce-up 1s; */
-   }
+}
+/* These selectors (above) affect the 'Projects' class elements and its children elements */
 
    footer {
     background-color: #202124;
@@ -253,13 +253,16 @@ animation: bounce-up 1s;
     align-items: center;
     padding: 25px;
     margin-top: 20px;
-   }
+}
+
 
 @media screen and (max-width: 1211px) {
+    /* Removes curved borders for middle images */
     #project-2 img,  #project-3 img {
         border-radius: 0%;
     }
-
+    
+    /* Curves first and last images in column */
     #project-1 img {
         border-radius: 25% 25% 0% 0%;
     }
@@ -268,6 +271,7 @@ animation: bounce-up 1s;
         border-radius: 0% 0% 25% 25%;
     }
 
+    /* Removes 'fade in' transition from text box in images */
     .projects div {
         width: 150px;
         padding: 8px 15px;
@@ -275,10 +279,11 @@ animation: bounce-up 1s;
         opacity: .8; 
     }
     
-   }
+}
 
 @media screen and (max-width: 720px) {
     
+    /* Stacks and aligns elements in 'about me' section in a column */
     .about-me {
         flex-direction: column;
         align-items: center;
@@ -297,4 +302,4 @@ animation: bounce-up 1s;
         justify-content: center;
     }
 
-   }
+}
