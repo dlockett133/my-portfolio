@@ -257,6 +257,7 @@ animation: bounce-up 1s;
 
 
 @media screen and (max-width: 1211px) {
+
     /* Removes curved borders for middle images */
     #project-2 img,  #project-3 img {
         border-radius: 0%;
@@ -282,7 +283,7 @@ animation: bounce-up 1s;
 }
 
 @media screen and (max-width: 720px) {
-    
+
     /* Stacks and aligns elements in 'about me' section in a column */
     .about-me {
         flex-direction: column;
