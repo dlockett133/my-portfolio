@@ -1,3 +1,4 @@
+/* Feature to make elements 'bounce up, then down' */
 @keyframes bounce-up {
     0%, 20%, 60%, 100% {
       -webkit-transform: translateY(0);
@@ -15,6 +16,7 @@
     }
   }
 
+/* Feature to make elements 'bounce down, then up' */
 @keyframes bounce-down {
     0%, 20%, 60%, 100% {
       -webkit-transform: translateY(0);
@@ -42,6 +44,7 @@ body {
     background-color: #f1f5f8;
 }
 
+/* These selectors (below) affect the header and its children elements */
 header{
     background-color: #202124;
     color: #f1f5f8;
@@ -100,6 +103,7 @@ nav a {
     color: #f1f5f8;
     text-decoration: none;
 }
+/* These selectors (above) affect the header and its children elements */
 
 section {
     display: flex;
@@ -107,7 +111,8 @@ section {
     
 }
 
-main {
+/* These selectors (below) affect the 'About Me' class elements and its children elements */
+.about-me {
     background-color: #202124;
     color: #f1f5f8;
     width: fit-content;
@@ -131,7 +136,7 @@ summary {
     margin-left: 15px;
 }
 
-main h2 {
+.about-me h2 {
     align-self: flex-start;
     font-size: 30px;
     font-weight: 200;
@@ -141,7 +146,7 @@ main h2 {
     margin-right: 30px;
 } 
 
-main p {
+.about-me p {
     width: 300px;
     margin-bottom: 20px;
     line-height: 1.5;
@@ -169,6 +174,8 @@ main p {
     align-items: center;
     justify-content: center;
 }
+/* These selectors (above) affect the 'About Me' class elements and its children elements */
+
 
 .projects {
     display: flex;
@@ -272,7 +279,7 @@ animation: bounce-up 1s;
 
 @media screen and (max-width: 720px) {
     
-    main {
+    .about-me {
         flex-direction: column;
         align-items: center;
     }
