@@ -6,42 +6,31 @@ This is a portfolio website, whose purpose is to showcase my work and skills of 
 
 My motivation for building this site was to showcase my projects while showcasing my 'bouncy/bubbly' personality. I knew that building a portfolio site is an important and essential asset for being a software engineer. This allows future employers to have a more detailed/transparent way to learn more about me and the work I have done, compared to a resume.
 
-## Table of Contents (Optional)
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
-
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+The web-page features links in its nav-bar that scrolls the UI to different sections of the page: "About-me", "Projects", and "Contact-me".
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
+The "About Me" section includes three ways to contact me; email, LinkedIn, and my Github repository.
 
-![alt text](assets/images/screenshot.png)
-![](./assets/images/my-portfolio-screenshot.png)
+The "Projects" section features four images that nested in a 2X2 grid. Each time you hover over an image, it will 'blur'. bounce, and 'fade in' the name of the project in the middle of it.
 
-![](./assets/images/my-portfolio-1211px.png)
+The website alos has a responsive layout, based on the screen/Max-width size.
 
-![](./assets/images/my-portfolio-720px.png)
+- When the page is viewed in full screen/1212px or higher, the page will show in its default layout (as shown in the screenshot below)
+  ![Screenshot of Daikeen Lockett's Portfolio web page](./assets/images/my-portfolio-screenshot.png)
+
+- When the page is viewed in a Max-width of 1211px or lower, the project's container will stack in a column (as seen in the screenshot).
+- The #project-2 and #project-3 images will no longer have a border radius, but the top and bottom images have the curved borders.
+- Also the project's name will appear automatically without having to hover over it.
+  ![Screenshot of web page's portfolio section stacked in a column when Max-width is 1211px or less](./assets/images/my-portfolio-1211px.png)
+
+- When the page is viewed in a Max-width of 720px or lower, the "About-me" section is transitioned to a 'flex-direction' column and all of its contents are centered (as shown in the screenshot below)
+  ![Screenshot of web page's About-Me section stacked in a column when Max-width is 720px or less](./assets/images/my-portfolio-720px.png)
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
+N/A
 
 ## License
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-
----
-
-## Features
-
-If your project has a lot of features, list them here.
+Please refer to the LICENSE in the repo.
