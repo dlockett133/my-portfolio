@@ -1,4 +1,4 @@
-# my-portfolio
+# My Portfolio
 
 This is a portfolio website, whose purpose is to showcase my work and skills of being a software engineer.
 
