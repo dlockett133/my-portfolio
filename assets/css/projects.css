@@ -112,6 +112,11 @@ div {
     margin-top: 10px;
 }
 
+.topic {
+    margin-bottom: 5px;
+    text-decoration: underline ;
+}
+
 .description, .my-role, .tools {
     width: 500px;
 }
