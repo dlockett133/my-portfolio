@@ -1,0 +1,315 @@
+/* Feature to make elements 'bounce up, then down' */
+@keyframes bounce-up {
+    0%, 20%, 60%, 100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  
+    40% {
+      -webkit-transform: translateY(-20px);
+      transform: translateY(-20px);
+    }
+  
+    80% {
+      -webkit-transform: translateY(-10px);
+      transform: translateY(-10px);
+    }
+  }
+
+/* Feature to make elements 'bounce down, then up' */
+@keyframes bounce-down {
+    0%, 20%, 60%, 100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  
+    40% {
+      -webkit-transform: translateY(20px);
+      transform: translateY(20px);
+    }
+  
+    80% {
+      -webkit-transform: translateY(10px);
+      transform: translateY(10px);
+    }
+  }
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f1f5f8;
+}
+
+/* These selectors (below) affect the header and its children elements */
+header{
+    background-color: #202124;
+    color: #f1f5f8;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    padding: 10px;
+    margin-top: 5px;
+    border-top: 6px solid #f1f5f8;
+}
+
+#logo {
+    width: 50px;
+    height: auto;
+    border: 2px solid #f1f5f8;
+    margin-top: 3px;
+}
+
+#logo:hover {
+    border-radius: 50%;
+}
+
+#brand ul, .brand {
+    font-size: 12px; 
+    font-style: italic; 
+    font-variant: normal; 
+    font-weight: 100; 
+    line-height: 22px; 
+    float: right;
+    margin-left: 10px;
+    padding-top: 5px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    list-style: none;
+    
+}
+
+#logo-name {
+    font-family: Futura; 
+    font-size: 20px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 100; 
+    line-height: 22px; 
+}
+
+nav {
+    float: right;
+    list-style: none;
+    margin-right: 20px;
+}
+
+nav li {
+    list-style-type:none;
+    display: inline-block;
+    margin-left: 25px;
+}
+
+nav a {
+    color: #f1f5f8;
+    text-decoration: none;
+}
+/* These selectors (above) affect the header and its children elements */
+
+section {
+    display: flex;
+    justify-content: center;
+    
+}
+
+/* These selectors (below) affect the 'About Me' class elements and its children elements */
+.screenshot-bg {
+    background-color: #202124;
+    color: #f1f5f8;
+    width: fit-content;
+    display: flex;
+    margin: 20px 312.5px;
+    padding: 25px 50px;
+    border: 2px solid #f1f5f8;
+    border-radius: 20px;
+}
+
+#screenshot {
+    height: 400px;
+    border: 2px solid #f1f5f8;
+    box-shadow: 0 12px 10px -6px #f1f5f8;
+
+}
+
+summary {
+    position: relative;
+    height: 300px;
+    margin-left: 15px;
+}
+
+.about-me h1 {
+    align-self: flex-start;
+    font-size: 30px;
+    font-weight: 200;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-right: 30px;
+} 
+
+.about-me p {
+    width: 300px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font: 15px My Gill Sans, Lato, sans-serif;
+    float: right;
+}
+
+#contact-me {
+    display: flex;
+    width: 300px;
+    position: absolute;
+    bottom: 0;
+    justify-content: flex-start;
+}
+
+.icons {
+    position: relative;
+    display: flex;
+    background-color: #f1f5f8;
+    width: 50px;
+    height: 50px;
+    padding: 8px;
+    border-radius: 50%;
+    margin: 15px 25px 15px 0px;
+    align-items: center;
+    justify-content: center;
+}
+/* These selectors (above) affect the 'About Me' class elements and its children elements */
+
+/* These selectors (below) affect the 'Projects' class elements and its children elements */
+.projects {
+    display: flex;
+    margin-left: 25%;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.projects img {
+    width:300px ;
+    height: 300px;
+    margin-left: 3px;
+}
+
+.projects a {
+    position: relative;
+}
+
+#project-1 img:hover, #project-2 img:hover {
+opacity: .5;
+animation: bounce-up 1s;
+}
+
+#project-3 img:hover, #project-4 img:hover {
+    opacity: .5;
+    animation: bounce-down 1s;
+}
+
+#project-1 img {
+    border-radius: 25% 0% 0% 0%;
+}
+
+#project-2 img{
+    border-radius: 0% 25% 0% 0%;
+
+}
+
+#project-3 img{
+    border-radius: 0% 0% 0% 25%;
+}
+
+#project-4 img{
+    border-radius: 0% 0% 25% 0%;
+}
+
+.projects div {
+    position: absolute;
+    bottom: 45%;
+    right: 25%;
+    background: black;
+    color: white;
+    margin-bottom: 3px;
+    font-family: sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+#project-1:hover div,
+#project-2:hover div,
+#project-3:hover div,
+#project-4:hover div {
+    width: 150px;
+    padding: 8px 15px;
+    visibility: visible;
+    opacity: 0.7; 
+}
+/* These selectors (above) affect the 'Projects' class elements and its children elements */
+
+   footer {
+    background-color: #202124;
+    color: #f1f5f8;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    padding: 25px;
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width: 1211px) {
+
+    /* Removes curved borders for middle images */
+    #project-2 img,  #project-3 img {
+        border-radius: 0%;
+    }
+    
+    /* Curves first and last images in column */
+    #project-1 img {
+        border-radius: 25% 25% 0% 0%;
+    }
+
+    #project-4 img{
+        border-radius: 0% 0% 25% 25%;
+    }
+
+    /* Removes 'fade in' transition from text box in images */
+    .projects div {
+        width: 150px;
+        padding: 8px 15px;
+        visibility: visible;
+        opacity: .8; 
+    }
+    
+}
+
+@media screen and (max-width: 720px) {
+
+    /* Stacks and aligns elements in 'about me' section in a column */
+    .about-me {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    summary {
+        padding-top: 10px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+
+    #contact-me {
+        padding-left: 15px;
+        justify-content: center;
+    }
+
+}
+
+.project-img {
+    width:300px ;
+    height: 300px;
+}
