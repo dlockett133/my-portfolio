@@ -5,20 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WeatherMann Project</title>
-    <link
+    <!-- <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
-    />
-    <!-- <link rel="stylesheet" href="../assets/css/style.css" /> -->
+    /> -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
   </head>
   <body>
-    <nav class="navbar bg-light">
-      <div class="container">
-        <span class="navbar-brand mb-0 h1">Weather Forecast</span>
-      </div>
-    </nav>
+    <header>
+      <aside id="brand">
+        <img
+          id="logo"
+          src="../assets/images/new-logo.jpg"
+          alt="Daikeen Lockett Logo"
+        />
+        <ul>
+          <li id="logo-name">Daikeen Lockett</li>
+          <li>Software Engineer</li>
+        </ul>
+      </aside>
+
+      <!-- Hyperlinks to different sections of page -->
+      <nav>
+        <ul>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact-me">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12 d-flex justify-content-center">
@@ -34,9 +51,47 @@
           <div class="card w-50">
             <h5 class="card-header">WeatherMann Application</h5>
             <div class="card-body">
-              <p class="card-text">Card content</p>
+              <p class="card-text">
+                Have you ever been sitting at home studying on a rainy day and
+                wished you had the perfect playlist? WeatherMann is here to
+                match all your weather vibes. Think a Walkman for the weather!
+                Upon visiting the page, type in the city of your choosing. This
+                search will then result in displaying the current weather for
+                your city as well as playing a songlist of warmer or winter
+                tunes to coincide with the outdoor temperatures. This site will
+                also locally store your searches, so that they persist when
+                returning to the page. If at any point you would like to remove
+                the search history, simply select the "Clear History" button and
+                your page will reset.
+              </p>
+              <p>
+                <strong>My Role:</strong>
+                <br />
+                Created two functionalities for the app. The first was setting
+                conditions for one of our functionalities, which was generating
+                the Spotify embed by inserting &lt;iframe&gt; player for a
+                playlist based on the weather/temperature of the location.
+                <br />
+                Then next functionalility was creating the function that
+                generated an image of the location/city to set as the
+                background. This was done by calling the Unsplash API, which
+                allowed me to fetch the link to the full image url of the photo,
+                and then set the "background-image" in CSS.
+              </p>
+              <br />
             </div>
-            <div class="card-footer">Card footer</div>
+            <div class="card-footer">
+              Built With:
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>JQuery</li>
+                <li>Moment.JS</li>
+                <li>BootStrap</li>
+                <li>Server-Side APIs: OpenWeather,UnSplash and Spotify</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
