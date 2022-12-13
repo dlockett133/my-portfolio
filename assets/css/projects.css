@@ -117,13 +117,17 @@ div {
     text-decoration: underline ;
 }
 
-.description, .my-role, .tools {
+.description, .my-role, .tools, .links {
     width: 500px;
 }
 
 li{
     list-style-type:none;
     margin-bottom: 5px;
+}
+
+li a:visited, li a:hover, li a:active {
+    color: inherit; 
 }
 
    footer {
