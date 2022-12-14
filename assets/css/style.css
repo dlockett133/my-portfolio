@@ -67,7 +67,7 @@ header{
     border-radius: 50%;
 }
 
-#brand ul {
+#brand ul, .brand {
     font-size: 12px; 
     font-style: italic; 
     font-variant: normal; 
@@ -76,6 +76,10 @@ header{
     float: right;
     margin-left: 10px;
     padding-top: 5px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    list-style: none;
+    
 }
 
 #logo-name {
@@ -303,4 +307,9 @@ animation: bounce-up 1s;
         justify-content: center;
     }
 
+}
+
+.project-img {
+    width:300px ;
+    height: 300px;
 }

@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f1f5f8;
+}
+
+/* These selectors (below) affect the header and its children elements */
+header{
+    background-color: #202124;
+    color: #f1f5f8;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    padding: 10px;
+    margin-top: 5px;
+    border-top: 6px solid #f1f5f8;
+}
+
+#logo {
+    width: 50px;
+    height: auto;
+    border: 2px solid #f1f5f8;
+    margin-top: 3px;
+}
+
+#logo:hover {
+    border-radius: 50%;
+}
+
+#brand ul, .brand {
+    font-size: 12px; 
+    font-style: italic; 
+    font-variant: normal; 
+    font-weight: 100; 
+    line-height: 22px; 
+    float: right;
+    margin-left: 10px;
+    padding-top: 5px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    list-style: none;
+    
+}
+
+#logo-name {
+    font-family: Futura; 
+    font-size: 20px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 100; 
+    line-height: 22px; 
+}
+
+nav {
+    float: right;
+    list-style: none;
+    margin-right: 20px;
+}
+
+nav li {
+    list-style-type:none;
+    display: inline-block;
+    margin-left: 25px;
+}
+
+nav a {
+    color: #f1f5f8;
+    text-decoration: none;
+}
+/* These selectors (above) affect the header and its children elements */
+
+/* These selectors (below) affect the 'About Me' class elements and its children elements */
+.screenshot-bg {
+    background-color: #202124;
+    color: #f1f5f8;
+    width: fit-content;
+    display: flex;
+    margin: 20px 312.5px;
+    padding: 25px 50px;
+    border: 2px solid #f1f5f8;
+    border-radius: 20px;
+}
+
+#screenshot {
+    height: 400px;
+    border: 2px solid #f1f5f8;
+    box-shadow: 0 12px 10px -6px #f1f5f8;
+
+}
+
+summary {
+    position: relative;
+    height: 300px;
+    margin-left: 15px;
+}
+
+section, .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center
+}
+
+div {
+    margin-top: 10px;
+}
+
+.topic {
+    margin-bottom: 5px;
+    text-decoration: underline ;
+}
+
+.description, .my-role, .tools, .links {
+    width: 500px;
+}
+
+li{
+    list-style-type:none;
+    margin-bottom: 5px;
+}
+
+li a:visited, li a:hover, li a:active {
+    color: inherit; 
+}
+
+   footer {
+    background-color: #202124;
+    color: #f1f5f8;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    padding: 25px;
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width: 1211px) {
+
+   
+}
+
+@media screen and (max-width: 720px) {
+
+    /* Stacks and aligns elements in 'about me' section in a column */
+    .screenshot-bg {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    summary {
+        padding-top: 10px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+
+    #contact-me {
+        padding-left: 15px;
+        justify-content: center;
+    }
+
+}
+
+.project-img {
+    width:300px ;
+    height: 300px;
+}
