@@ -79,8 +79,9 @@ nav a {
     color: #f1f5f8;
     width: fit-content;
     display: flex;
+    flex-direction: column;
     margin: 20px 312.5px;
-    padding: 25px 50px;
+    padding: 25px 25px;
     border: 2px solid #f1f5f8;
     border-radius: 20px;
 }
